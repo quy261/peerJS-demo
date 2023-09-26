@@ -15,7 +15,7 @@ const io = require('socket.io')(server,
     {
         // fix CORS
         cors: {
-            origin: ["http://127.0.0.1:5500", "http://localhost:5500", "https://quy261.github.io/peerJS-demo/"],
+            origin: ["http://127.0.0.1:5500", "http://localhost:5500", "https://quy261.github.io"],
             methods: ["GET", "POST"]
         }
     }

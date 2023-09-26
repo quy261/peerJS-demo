@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Demo WebRTC </title>
+    <!-- <script src="jquery.js"></script> -->
+    <script src="https://unpkg.com/peerjs@1.5.0/dist/peerjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- <script src="peer.js"></script> -->
+</head>
+
+<body>
+    <p id="div-notif" hidden></p>
+    <div id="div-video">
+        <div id="div-list">
+            <p> ONLINE LIST </p>
+            <ul id="ul-list">
+            </ul>
+        </div>
+        <div id="div-main">
+            <h3 id="my-peer" style="color: #df3ec9;;"> MY LOCAL STREAM ID: </h3>
+            <video src="" id="localStream" width="300" controls></video>
+            <br>
+            <br>
+            <!-- <h3 id="your-peer" style="color: #df3ec9;;"> YOUR PERSON STREAM ID: </h3> -->
+            <video src="" id="remoteStream" width="300" controls></video>
+            <br>
+            <br>
+
+            <input type="text" id="remoteID" placeholder="Remote ID...">
+            <button id="btnCall"> CALL </button>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div id="div-sign-up">
+        <p style="color: red"> WELCOME TO APP VIDEO STREAM USING NODEJS & WEBRTC </p>
+        <input type="text" id="txtUserName" placeholder="Username...">
+        <button id="btnSignUp"> Sign up </button>
+        <br>
+        <br>
+    </div>
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
